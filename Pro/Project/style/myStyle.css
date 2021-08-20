@@ -1,0 +1,48 @@
+.img-container {
+        text-align: center;
+      }
+	  .name {
+        text-align: center;
+      }
+	 
+	  
+ body{
+	background-color: #caebe0;
+	text-align:center;
+}
+
+#p{
+color:purple;
+}
+#p1{
+color:blue;
+}
+.btn-link{
+	
+	background-color:rgb(73,127,175);
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:2px;
+	font-family:calibri;
+	text-decoration:none;
+}
+#p2{
+color:red;
+}
+
+.btn-link:hover{
+  background-color:rgb(0,100,0);
+}
+.btn-link:active{
+  background-color:green;
+}
+.h1 {
+ color: whitesmoke;
+}
+.f1 {
+ background-color:Aliceblue;
+
+}

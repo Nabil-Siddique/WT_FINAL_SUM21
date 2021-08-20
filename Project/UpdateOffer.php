@@ -1,0 +1,57 @@
+<?php
+	include 'controllers/mng_control.php';
+	$id = $_GET["id"];
+	$c = getOff($id);
+	
+?>
+
+<html>
+<link rel="stylesheet" href="style/updateOffer.css">
+	<body>
+	<script src="js\addOffer.js"></script>
+	<div class="bg">
+	<h1 align="center">Update Offer</h1>
+	<a target="" href="Manager.php"><button  class="button2" >Manager Home</button></a>
+		<form action="" onsubmit="return validate()" method="POST">
+			<table align="center">
+				<tr>
+					<td>
+					<input type="hidden" value="<?php echo $id?>" name="id">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="offername"name="offername" value="<?php echo $c["Offer_Name"];?>" placeholder="Offer Name"><span id="err_OffName"><?php echo $err_OffName;?></span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input type="text" id="percentage" name="percentage" value="<?php echo $c["Offer_Percentage"];?>" placeholder="Percentage"><span id="err_OffPercen"><?php echo $err_OffPercen;?></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="coupon"name="coupon" value="<?php echo $c["Coupon_Code"];?>" placeholder="Coupon"><span id="err_CoCode"><?php echo $err_CoCode;?></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" id="sdate" name="sdate" value="<?php echo $c["Staring_Date"];?>" placeholder="Starting Date"><span id="err_SDate"><?php echo $err_SDate;?></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" id="edate" name="edate" value="<?php echo $c["Ending_Date"];?>" placeholder="Ending Date"><span id="err_EDate"><?php echo $err_EDate;?></span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="center">
+						<input type="submit" name="updateOffer" value="Update Offer" class="button">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

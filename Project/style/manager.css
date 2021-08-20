@@ -1,0 +1,61 @@
+body,html {
+  height: 100%;
+  margin: 0;
+}
+.header {
+  background-color: #b3ecff;
+
+  color: #ffffff;
+  padding: 15px;
+}
+.bg {
+  /* The image used */
+  background-image: url("Manager.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 0.5}
+h1{
+	color:Black;
+}
+
+.button1 {
+  background-color: #ff3300;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button1:hover {opacity: 0.5}
+h1{
+	color:Black;
+}
